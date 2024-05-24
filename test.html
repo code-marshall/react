@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CodeChef Login</title>
+    <!-- Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WFQ23G3"></script>    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Mono:wght@100;300;400;500;700&family=Lato:wght@100;300;400;700;900&family=Outfit:wght@100;200;300;400;500;600&family=IBM+Plex+Mono&family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='https://www.codechef.com/sites/all/themes/mallow/css/mallow.css?v=0.1'>    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://www.codechef.com/sites/all/themes/mallow/js/mallow.min.js?v=0.1'></script>
+    <script type="text/javascript" src="https://www.codechef.com/misc/jquery.js?Q"></script>
+    <script type="text/javascript" src="https://www.codechef.com/misc/drupal.js?Q"></script>
+    <script type="text/javascript" src="https://www.codechef.com/misc/jquery-popup-overlay/popupoverlay.js?Q"></script>
+    <script type="text/javascript" src="https://cdn.codechef.com/js/jquery/1.9.1/jquery.min.js?Q"></script>
+    <script>window.csrfToken = 'ddf022254d32e50c57a667d124210f76a0f1c421d9e1f0fd1dc502701f82464a';</script>    <link rel='canonical' href='http://www.codechef.com/login'>    <link rel='stylesheet' type='text/css' href='/sites/all/themes/abessive/css/modal.css'>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV5X2M"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div class="l-display-none">
+    <div id="user-bar" style="display: flex!important;"><a style='text-decoration: none;'
+                                                           href= /pro#header target='_blank'>
+        <div>
+            <i class='i-premium-icon-with-border'></i>
+        </div>
+    </a>
+        <span class='m-divider--vertical-dark'></span><form action="/login?destination=/"  accept-charset="UTF-8" method="post" id="new-login-form">
+            <div><div class="form-item" id="edit-name-wrapper">
+                <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+                <input type="text" maxlength="60" name="name" id="edit-name" size="60" value="" class="form-text required new-input" placeholder="Username or Email" tabIndex="1" />
+            </div>
+                <div class="form-item" id="edit-pass-wrapper">
+                    <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+                    <input type="password" name="pass" id="edit-pass"  maxlength="128"  size="60"  class="form-text required new-input" placeholder="Password" tabIndex="2" />
+                </div>
+                <input type="hidden" name="csrfToken" id="edit-csrfToken" value="ddf022254d32e50c57a667d124210f76a0f1c421d9e1f0fd1dc502701f82464a"  />
+                <a href="/user/password" tabIndex="4">Forgot Password?</a><input type="hidden" name="form_build_id" id="form-c6iy21Gvt-J4f-sWW1HpURL5hs3FAtLHLQQqp3DqBHI" value="form-c6iy21Gvt-J4f-sWW1HpURL5hs3FAtLHLQQqp3DqBHI"  />
+                <input type="hidden" name="form_id" id="edit-new-login-form" value="new_login_form"  />
+                <input type="submit" name="op" id="edit-submit" value="Login"  class="form-submit btn new-input-button" tabIndex="3" />
+
+            </div></form>
+    </div><div id="facebook-login">
+    <div id="oauth-buttons" class="oauth-buttons-header">
+        <li>
+            <a
+                    class='icon-social oauth_button oauth_button-small connect'
+                    title='Signup/Login with Google'
+                    id='button_google' onclick = "connectOauth(event, '/OAuth/google')"
+            >
+            </a>
+        </li><li>
+        <a
+                class='icon-social oauth_button oauth_button-small connect'
+                title='Signup/Login with Github'
+                id='button_github' onclick = "connectOauth(event, '/OAuth/github')"
+        >
+        </a>
+    </li><li>
+        <a
+                class='icon-social oauth_button oauth_button-small connect'
+                title='Signup/Login with Facebook'
+                id='button_facebook' onclick = "connectOauth(event, '/fb/auth?src=login');"
+        >
+        </a>
+    </li></div>
+</div><div class='signup'><a href='/signup' class='new-input-button btn'>New User</a></div></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV5X2M"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><header class="m-header-one">
+    <div class="l-header">
+        <div class="l-header__logo">
+            <div class="l-header__image-2">
+                <a href="http://www.codechef.com">
+                    <img class="m-header__image m-header__image--pc"
+                         src="https://cdn.codechef.com/images/cc-logo.svg"
+                         alt="CodeChef Logo">
+                    <img class="m-header__image m-header__image--mobile"
+                         src="https://cdn.codechef.com/images/cc-logo-mobile-1.svg"
+                         alt="CodeChef Logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<style type="text/css">
+    .page-tabs .title .links a {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 50%;
+        border-top: 3px solid #d9e2ed;
+        line-height: 54px;
+        text-align: center;
+        background: #D9E2ED;
+    }
+
+    .page-tabs .title .links {
+        display: flex;
+        max-width: 400px;
+    }
+
+    .page-tabs .title .links a:hover {
+        color: #3b5998;
+    }
+
+    .page-tabs .title .links a.current {
+        background: #ffffff;
+        border: 1px solid #ffffff;
+        border-top: 3px solid #5A86DC;
+        border-bottom: none;
+        font-weight: 700;
+    }
+
+    .page-tabs .title .links a.current:hover {
+        color: #4a4a4a;
+    }
+
+    @media (max-width: 600px) {
+        .page-tabs .title .links {
+            max-width: 600px;
+        }
+
+        .page-tabs .title .links a {
+            font-size: 14px;
+        }
+    }
+
+
+</style>
+
+<section class="l-section l-section--blue-1  l-last-section l-padding-top--40">
+    <div class="page-tabs l-section--center l-row--800">
+        <div class="title">
+            <div class="links">
+                <a href="#" id="signup" data-name="new-user" onclick=updateLoginOrSignupLink('signup')>Login</a><a
+                    href="#" id="login" data-name="login" onclick=updateLoginOrSignupLink('login')>Sign up</a>
+            </div>
+        </div>
+        <div class="l-section l-section--center l-padding-top--40  tab new-user l-row--800" id='cc-register-viewport'>
+            <div class="l-row">
+                <h2 class="m-head__23">Create Your CodeChef Account</h2>
+                <div class="ccl-su-disable" cc-forms="form-overlay"></div>
+                <div class="ccl-ns-content  l-row--320">
+                    <p class="m-para m-para--600">Use Social Media Credentials</p>
+                    <div class="l-oauth-buttons" id="oauth-buttons">
+                        <li>
+                            <a
+                                    class='icon-social oauth_button oauth_button-medium connect'
+                                    title='Signup/Login with Google'
+                                    id='button_google' onclick = "connectOauth(event, '/OAuth/google')"
+                            >
+                            </a>
+                        </li><li>
+                        <a
+                                class='icon-social oauth_button oauth_button-medium connect'
+                                title='Signup/Login with Github'
+                                id='button_github' onclick = "connectOauth(event, '/OAuth/github')"
+                        >
+                        </a>
+                    </li><li>
+                        <a
+                                class='icon-social oauth_button oauth_button-medium connect'
+                                title='Signup/Login with Facebook'
+                                id='button_facebook' onclick = "connectOauth(event, '/fb/auth?src=login');"
+                        >
+                        </a>
+                    </li>                    </div>
+                    <p class="m-oauth-divider">
+                        <span class="l-oauth-divider"></span>OR<span class="l-oauth-divider"></span>
+                    </p>
+                    <div cc-forms="formS"><form action="https://www.codechef.com/api/codechef/login" accept-charset="UTF-8" method="post" id="ajax-login-form" class="l-form">
+                        <div><div class="ccl-margin-sm"><div class="ccl-su-position-rel"><div class="form-item" id="edit-name-wrapper">
+                            <label for="edit-name">Username or Email: <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="text" maxlength="128" name="name" id="edit-name" size="60" value="" description="1" tabindex="1" autofocus="" data="1" class="form-text required ccl-f-placeholder ccl-f-input" autocomplete="none">
+                            <div style="display:none;" cc-forms="form-field-description" class="ccl-su-help-position"><div class="ccl-su-help"><div class="ccl-font-s ccl-align-l"><div cc-forms="description" class="l-card-hint"></div></div></div></div></div>
+                        </div></div><div class="ccl-margin-sm"><div class="ccl-su-position-rel"><div class="toggle-password-login i-eye-mask-icon"><p class="m-eye-icon-supporting-text" id="toggle-text-login">Show</p></div><div class="form-item" id="edit-pass-wrapper">
+                            <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+                            <input type="password" name="pass" id="edit-pass" maxlength="128" size="60" description="1" tabindex="2" data="1" class="form-text required ccl-f-placeholder ccl-f-input password-login" autocomplete="none">
+                            <div style="display:none;" cc-forms="form-field-description" class="ccl-su-help-position"><div class="ccl-su-help"><div class="ccl-font-s ccl-align-l"><div cc-forms="description" class="l-card-hint"></div></div></div></div></div>
+                        </div></div><div class="ccl-margin-s"><input type="submit" name="op" id="edit-submit-button" value="Login" class="ccl-f-input ccl-float-right cc-login-btn" tabindex="3" autocomplete="none">
+                        </div><a href="/user/password" class="m-list__link m-forgot-password" tabindex="4">Forgot Password?</a>
+                            <p class="m-help__text l-margin-top-28">For any issues or assistance, email
+                                <a href="mailto:help@codechef.com" class="m-list__link">help@codechef.com</a></p><input type="hidden" name="form_build_id" id="form-ZISQBEDzZ9ZulQ9HWIjcY8UnCdDgmU8m_-tp1XQM9ks" value="form-ZISQBEDzZ9ZulQ9HWIjcY8UnCdDgmU8m_-tp1XQM9ks" autocomplete="none">
+                            <input type="hidden" name="form_id" id="edit-ajax-login-form" value="ajax_login_form" autocomplete="none">
+
+                        </div></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="l-section  l-section--center l-row--800 l-padding-top--40 tab login" id='cc-login-viewport'>
+        <div class="l-row l-row--800">
+            <div class="ccl-su-disable" cc-forms="form-overlay"></div>
+            <div class="ccl-ns-content">
+                <div cc-forms='form-description' class="ccl-su-outline-top">
+                    <h2 class="m-head__23">Already have an account?</h2>
+                </div>
+            </div>
+            <div class="ccl-ns-content  l-row--320">
+                <p class="m-para m-para--600">Use Social Media Credentials</p>
+                <div class="l-oauth-buttons" id="oauth-buttons">
+                    <li>
+                        <a
+                                class='icon-social oauth_button oauth_button-medium connect'
+                                title='Signup/Login with Google'
+                                id='button_google' onclick = "connectOauth(event, '/OAuth/google')"
+                        >
+                        </a>
+                    </li><li>
+                    <a
+                            class='icon-social oauth_button oauth_button-medium connect'
+                            title='Signup/Login with Github'
+                            id='button_github' onclick = "connectOauth(event, '/OAuth/github')"
+                    >
+                    </a>
+                </li><li>
+                    <a
+                            class='icon-social oauth_button oauth_button-medium connect'
+                            title='Signup/Login with Facebook'
+                            id='button_facebook' onclick = "connectOauth(event, '/fb/auth?src=login');"
+                    >
+                    </a>
+                </li>                </div>
+                <p class="m-oauth-divider">
+                    <span class="l-oauth-divider"></span>OR<span class="l-oauth-divider"></span>
+                </p>
+                <div cc-forms='form'></div>
+            </div>
+            <div cc-forms='form'></div>
+        </div>
+    </div>
+</section>
+<footer class="l-footer">
+    <div class="l-footer__content m-footer__content">
+        <div class='l-footer__links'><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>Learning Resources</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='http://www.codechef.com/learn' class='m-footer__link'>Learning courses</a></div><div class='l-footer__link'><a href='http://www.codechef.com/practice' class='m-footer__link'>Practice Problems</a></div><div class='l-footer__link'><a href='http://www.codechef.com/blogs' class='m-footer__link'>CodeChef Blogs</a></div><div class='l-footer__link'><a href='/wiki/faq' class='m-footer__link'>FAQ's</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>Programming Tools</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='http://www.codechef.com/ide' class='m-footer__link'>Online IDE</a></div><div class='l-footer__link'><a href='http://www.codechef.com/contests' class='m-footer__link'>Coding Contests</a></div><div class='l-footer__link'><a href='http://www.codechef.com/hostyourcontest' class='m-footer__link'>Host Rated Contest</a></div><div class='l-footer__link'><a href='http://www.codechef.com/problemsetting' class='m-footer__link'>Problem Setting</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>More</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='http://www.codechef.com/college-program' class='m-footer__link'>CodeChef For Colleges</a></div><div class='l-footer__link'><a href='http://www.codechef.com/contactus' class='m-footer__link'>Contact Us</a></div><div class='l-footer__link'><a href='http://www.codechef.com/codeofconduct' class='m-footer__link'>Code Of Conduct</a></div><div class='l-footer__link'><a href='http://www.codechef.com/rankings' class='m-footer__link'>User Ranklist</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>Usage Policy</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='http://www.codechef.com/privacy-policy' class='m-footer__link'>Privacy policy</a></div><div class='l-footer__link'><a href='http://www.codechef.com/terms' class='m-footer__link'>Terms</a></div><div class='l-footer__link'><a href='http://www.codechef.com/other-policies' class='m-footer__link'>Other Policy</a></div></div></div></div>
+    </div>
+    <div class="l-footer__social">
+        <div class="m-footer__social">
+            <div class="l-footer__site">
+                <a href="http://www.codechef.com" class="m-footer__site is-link-hovered ">www.codechef.com</a>
+            </div>
+            <div class="l-footer__follow-sec">
+                <div class="l-footer__follow">
+                    <span class="m-footer__follow">Follow Us</span>
+                </div>
+                <div class='l-footer__icons'><a class='m-social i-youtube' href='//youtube.com/c/codechef1'></a><a class='m-social i-facebook' href='//facebook.com/CodeChef'></a><a class='m-social i-instagram' href='//instagram.com/codechef'></a><a class='m-social i-twitter' href='//twitter.com/codechef'></a><a class='m-social i-medium' href='//medium.com/codechef-official'></a><a class='m-social i-quora' href='//quora.com/topic/CodeChef'></a><a class='m-social i-linkedin' href='//linkedin.com/company/codechef'></a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function () {
+        // $('.tab').hide();
+        var hash = window.location.hash.split("?")[0];
+        hash = '#signup';        if (hash) {
+            if (hash != '#signup' && hash != '#login') {
+                hash = '#signup';
+            }
+        } else {
+            hash = '#signup';
+        }
+
+        showTab($(hash).data('name'));
+
+        function showTab(tabName) {
+            $('.page-tabs .links a').removeClass('current');
+            $('.tab').hide();
+            $('.page-tabs .title .links a[data-name=' + tabName + ']').addClass('current');
+            $('.' + tabName).show();
+        }
+
+        $('.page-tabs .links a').click(function (e) {
+            var thisName = $(this).data('name');
+            showTab(thisName);
+            e.preventDefault();
+        });
+
+    });
+
+    function updateLoginOrSignupLink(currentUrl) {
+        if (currentUrl === 'signup') {
+            document.title = ('CodeChef Register')
+        } else {
+            document.title = ('CodeChef Login')
+        }
+        let url = window.location.href;
+        let completeUrl = url.split('?')
+        let urlWithoutQueryParams = currentUrl === 'signup' ?
+            completeUrl[0].replace('login', 'signup') : completeUrl[0].replace('signup', 'login')
+        let updatedUrl = (completeUrl[1] === undefined) ?
+            urlWithoutQueryParams : urlWithoutQueryParams + '?' + completeUrl.slice(1).join('?');
+        window.history.pushState('', '', updatedUrl);
+    }
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+         src="https://dc.ads.linkedin.com/collect/?pid=93463&fmt=gif" />
+</noscript><div id='gdpr-cookie-notif' class='global--announcement' style='display: none;'>
+    <div class='global--announcement__content'>
+        <p>
+            We use cookies to improve your experience and for analytical purposes.
+            Read our <a href='http://www.codechef.com/privacy-policy'>Privacy Policy</a>
+            and <a href='http://www.codechef.com/terms'>Terms</a> to know more.
+            You consent to our cookies if you continue to use our website.
+        </p>
+    </div>
+    <div class='global--announcement__action'>
+        <button id='gdpr-i-love-cookies' class='button grey tiny'>Okay</button>
+    </div>
+
+</div></body>
+</html>
